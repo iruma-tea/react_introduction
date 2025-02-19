@@ -5,6 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppClass from './AppClass';
 import './chap02/class.css';
+import './chap03/MyHello'
+import MyHello from './chap03/MyHello';
+import EventBasic from './chap03/EventBasic';
+import StateBasic from './chap03/StateBasic';
+import ForList from './chap03/ForList';
+import books from './chap03/books';
+import ForNest from './chap03/ForNest';
+import ForFilter from './chap03/ForFilter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -125,6 +133,29 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   )
 // );
 
+// root.render(
+//   <MyHello myName="鈴木" />
+// );
+
+// root.render(
+//   <EventBasic type="time" />
+// );
+
+// root.render(
+//   <StateBasic init={0} />
+// );
+
+// root.render(
+//   <ForList src={books} />
+// );
+
+// root.render(
+//   <ForNest src={books} />
+// );
+
+root.render(
+  <ForFilter src={books} />
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
