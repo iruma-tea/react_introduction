@@ -13,6 +13,8 @@ import ForList from './chap03/ForList';
 import books from './chap03/books';
 import ForNest from './chap03/ForNest';
 import ForFilter from './chap03/ForFilter';
+import ForSort from './chap03/ForSort';
+import SelectStyle from './chap03/SelectStyle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -153,8 +155,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <ForNest src={books} />
 // );
 
+// root.render(
+//   <ForFilter src={books} />
+// );
+
+// root.render(
+//   <ForSort src={books} />
+// );
+
 root.render(
-  <ForFilter src={books} />
+  <SelectStyle mode="light" />
 );
 
 // If you want to start measuring performance in your app, pass a function
