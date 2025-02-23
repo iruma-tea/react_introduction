@@ -15,6 +15,7 @@ import ForNest from './chap03/ForNest';
 import ForFilter from './chap03/ForFilter';
 import ForSort from './chap03/ForSort';
 import SelectStyle from './chap03/SelectStyle';
+import StyledPanel from './chap03/StyledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -163,8 +164,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <ForSort src={books} />
 // );
 
+// root.render(
+//   <SelectStyle mode="light" />
+// );
+
 root.render(
-  <SelectStyle mode="light" />
+  <StyledPanel>
+    <p>メンバー募集中！</p>
+    <p>ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>
+  </StyledPanel>
 );
 
 // If you want to start measuring performance in your app, pass a function
