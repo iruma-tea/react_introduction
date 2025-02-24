@@ -138,9 +138,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   )
 // );
 
-// root.render(
-//   <MyHello myName="鈴木" />
-// );
+root.render(
+  <MyHello myName="鈴木" />
+);
 
 // root.render(
 //   <EventBasic type="time" />
@@ -215,18 +215,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   </ListTemplate>
 // );
 
-root.render(
-  <ListTemplate src={books} render={elem => (
-    <>
-      <dt>
-        <a href={`https//wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpgs`}>
-          {elem.title} ({elem.price}円)
-        </a>
-      </dt>
-      <dd>{elem.summary}</dd>
-    </>
-  )} />
-);
+// root.render(
+//   <ListTemplate src={books} render={elem => (
+//     <>
+//       <dt>
+//         <a href={`https//wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpgs`}>
+//           {elem.title} ({elem.price}円)
+//         </a>
+//       </dt>
+//       <dd>{elem.summary}</dd>
+//     </>
+//   )} />
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
