@@ -16,6 +16,8 @@ import ForFilter from './chap03/ForFilter';
 import ForSort from './chap03/ForSort';
 import SelectStyle from './chap03/SelectStyle';
 import StyledPanel from './chap03/StyledPanel';
+import TitledPanel from './chap03/TitledPanel';
+import ListTemplate from './chap03/ListTemplate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -168,11 +170,62 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <SelectStyle mode="light" />
 // );
 
+// root.render(
+//   <StyledPanel>
+//     <p>メンバー募集中！</p>
+//     <p>ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>
+//   </StyledPanel>
+// );
+
+// root.render(
+//   <TitledPanel title={
+//     <p>メンバー募集中！</p>
+//   }
+//   body={
+//     <p>ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>
+//   }>
+//   </TitledPanel>
+// );
+
+// const title = <p>メンバー募集中！</p>;
+// const body = <p>ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>;
+// root.render(
+//   <TitledPanel title={title} body={body} />
+// );
+
+// root.render(
+//   <TitledPanel>
+//     <p key="title">メンバー募集中！</p>
+//     <p key="body">ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>
+//   </TitledPanel>
+// );
+
+// root.render(
+//   <ListTemplate src={books}>
+//     {elem =>(
+//       <>
+//         <dt>
+//           <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
+//             {elem.title}({elem.price}円)
+//           </a>
+//         </dt>
+//         <dd>{elem.summary}</dd>
+//       </>  
+//     )}
+//   </ListTemplate>
+// );
+
 root.render(
-  <StyledPanel>
-    <p>メンバー募集中！</p>
-    <p>ようこそ、ＷＩＮＧＳプロジェクトへ！！</p>
-  </StyledPanel>
+  <ListTemplate src={books} render={elem => (
+    <>
+      <dt>
+        <a href={`https//wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpgs`}>
+          {elem.title} ({elem.price}円)
+        </a>
+      </dt>
+      <dd>{elem.summary}</dd>
+    </>
+  )} />
 );
 
 // If you want to start measuring performance in your app, pass a function
