@@ -18,6 +18,7 @@ import SelectStyle from './chap03/SelectStyle';
 import StyledPanel from './chap03/StyledPanel';
 import TitledPanel from './chap03/TitledPanel';
 import ListTemplate from './chap03/ListTemplate';
+import TypeProp, {Member} from './chap03/TypePro';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -138,9 +139,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   )
 // );
 
-root.render(
-  <MyHello myName="鈴木" />
-);
+// root.render(
+//   <MyHello myName="鈴木" />
+// );
 
 // root.render(
 //   <EventBasic type="time" />
@@ -227,6 +228,12 @@ root.render(
 //     </>
 //   )} />
 // );
+
+root.render(
+  // 正しい例
+  // <TypeProp prop1={new Member()} />
+  <TypeProp prop2="hoge" />
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
