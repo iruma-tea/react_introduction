@@ -20,6 +20,8 @@ import TitledPanel from './chap03/TitledPanel';
 import ListTemplate from './chap03/ListTemplate';
 import TypeProp, {Member} from './chap03/TypePro';
 import PropTypes from 'prop-types';
+import StateParent from './chap03/StateParent';
+import EventMouse from './chap03/EventMouse';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -230,7 +232,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   )} />
 // );
 
-root.render(
+// root.render(
   // 正しい例
   // <TypeProp prop1={new Member()} />
   // 誤った例
@@ -252,9 +254,17 @@ root.render(
   // 誤った例
   // <TypeProp prop5={{'鈴木花子': 15, '佐藤雫': '三十'}} />
   // 正しい例
-  <TypeProp prop6={{name: '鈴木花子', age: 35, sex: '女性', blood: 'A'}} />
+  // <TypeProp prop6={{name: '鈴木花子', age: 35, sex: '女性', blood: 'A'}} />
   // 誤った例
   // <PropTypes prop6={{age: 35, sex: '女性'}} />
+// );
+
+// root.render(
+//   <StateParent />
+// );
+
+root.render(
+  <EventMouse alt="ロゴ画像" beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif" afterSrc="https://www.web-deli.com/image/home_chara.gif" />
 );
 
 // If you want to start measuring performance in your app, pass a function
