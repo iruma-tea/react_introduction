@@ -19,6 +19,7 @@ import StyledPanel from './chap03/StyledPanel';
 import TitledPanel from './chap03/TitledPanel';
 import ListTemplate from './chap03/ListTemplate';
 import TypeProp, {Member} from './chap03/TypePro';
+import PropTypes from 'prop-types';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -232,7 +233,28 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // 正しい例
   // <TypeProp prop1={new Member()} />
-  <TypeProp prop2="hoge" />
+  // 誤った例
+  // <TypeProp prop1="hoge" />
+  // 正しい例
+  // <TypeProp prop2={"男性"} />
+  // 誤った例
+  // <TypeProp prop2="hoge" />
+  // 正しい例
+  // <TypeProp prop3="鈴木花子" />
+  // 誤った例
+  // <TypeProp prop3={new Member()} />
+  // 正しい例
+  // <TypeProp prop4={[15, 30]} />
+  // 誤った例
+  // <TypeProp prop4={[333, '鈴木花子']} />
+  // 正しい例
+  // <TypeProp prop5={{'鈴木花子': 15, '佐藤雫': 30}} />
+  // 誤った例
+  // <TypeProp prop5={{'鈴木花子': 15, '佐藤雫': '三十'}} />
+  // 正しい例
+  <TypeProp prop6={{name: '鈴木花子', age: 35, sex: '女性', blood: 'A'}} />
+  // 誤った例
+  // <PropTypes prop6={{age: 35, sex: '女性'}} />
 );
 
 // If you want to start measuring performance in your app, pass a function
