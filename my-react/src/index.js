@@ -22,6 +22,13 @@ import TypeProp, {Member} from './chap03/TypePro';
 import PropTypes from 'prop-types';
 import StateParent from './chap03/StateParent';
 import EventMouse from './chap03/EventMouse';
+import EventError from './chap03/EventError';
+import EventObj from './chap03/EventObj';
+import EventPoint from './chap03/EventPoint';
+import EventKey from './chap03/EventKey';
+import EventArgs from './chap03/EventArgs';
+import EventArgs2 from './chap03/EventArgs2';
+import EventPropagation from './chap03/EventPropagation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -263,8 +270,36 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <StateParent />
 // );
 
+// root.render(
+//   <EventMouse alt="ロゴ画像" beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif" afterSrc="https://www.web-deli.com/image/home_chara.gif" />
+// );
+
+// root.render(
+//   <EventError src="./image/wings.jpg" alt="サンプル画像" />
+// );
+
+// root.render(
+//   <EventObj />
+// );
+
+// root.render(
+//   <EventPoint />
+// );
+
+// root.render(
+//   <EventKey />
+// );
+
+// root.render(
+//   <EventArgs />
+// );
+
+// root.render(
+//   <EventArgs2 />
+// );
+
 root.render(
-  <EventMouse alt="ロゴ画像" beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif" afterSrc="https://www.web-deli.com/image/home_chara.gif" />
+  <EventPropagation />
 );
 
 // If you want to start measuring performance in your app, pass a function
