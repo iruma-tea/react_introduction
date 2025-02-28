@@ -32,6 +32,10 @@ import EventPropagation from './chap03/EventPropagation';
 import EventOnce from './chap03/EventOnce';
 import EventPassive from './chap03/EventPassive';
 import StateForm from './chap04/StateForm';
+import StateFormUC from './chap04/StateFormUC';
+import FormTextarea from './chap04/FormTextarea';
+import FormSelect from './chap04/FormSelect';
+import FormList from './chap04/FormList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -313,8 +317,24 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <EventPassive />
 // );
 
+// root.render(
+//   <StateForm />
+// );
+
+// root.render(
+//   <StateFormUC />
+// );
+
+// root.render(
+//   <FormTextarea />
+// );
+
+// root.render(
+//   <FormSelect />
+// );
+
 root.render(
-  <StateForm />
+  <FormList />
 );
 
 // If you want to start measuring performance in your app, pass a function
