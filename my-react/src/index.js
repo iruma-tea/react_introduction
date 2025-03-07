@@ -42,6 +42,7 @@ import FormCheckMulti from './chap04/FormCheckMulti';
 import FormFile from './chap04/FormFile';
 import StateNest from './chap04/StateNest';
 import StateNestImmer from './chap04/StateNestImmer';
+import StateNestImmer2 from './chap04/StateNestImmer2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -363,8 +364,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <StateNest />
 // );
 
+// root.render(
+//   <StateNestImmer />
+// );
+
 root.render(
-  <StateNestImmer />
+  <StateNestImmer2 />
 );
 
 
